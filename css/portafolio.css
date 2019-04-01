@@ -1,0 +1,333 @@
+body{
+   margin: 0;
+
+}
+ footer, menu{
+    background: #2A2A2E;
+}
+header{background-color:#F0F0F0;}
+.sidebar-right{
+    margin-left: 8%;
+    width: 92%;
+}
+
+.clearfix{
+    box-sizing: border-box;
+}
+p{
+    font-size: 17px;
+}
+i{font-size: 20px;
+    width: 25px;
+    padding: 8px;
+        align-items: center;
+     border-radius: 10px;}
+h2{
+    text-transform: uppercase;
+}
+span{
+    
+    color:#FF4E3D; 
+}
+/* -----------------------------header----------------------- */
+header{
+    display: flex;
+   
+}
+br{margin: 10px;}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+}
+nav a{
+    margin: 20px;
+}
+menu h3{
+    color: rgba(255, 255, 255, 1 );
+
+    
+} 
+menu i{
+    color: rgba(255, 255, 255, 1.70);
+    border: 2px #FF4E3D solid;
+    padding-left: 13px;
+}
+menu{
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    width: 8%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+
+
+
+
+.landing{
+    width: 92%;
+    margin-left: 8%;
+}
+.foto-landing{
+  
+    background-image: url(  ../images/foto-cañon.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+
+   
+    ;}
+    
+    .titulo-second{ margin: auto auto;
+    display: flex;
+    background-color:#F0F0F0;}
+
+.landing h2{
+    font-size: 4vw;
+    font-weight: bold;
+    color:#2A2A2E;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -----------------------------intro----------------------- */
+.intro{
+    min-height: 30vh;
+    background-color:#2A2A2E;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    color: #f0f0f0;
+}
+
+/* 
+--------------------------------------parrallax---------------------- */
+.parallax{
+    min-height: 70vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
+.parallax-a{
+    background-image:url(../images/parallax-img-min.jpg);
+    min-height: 50vh;
+}
+.parallax-b{
+    background-image:url(../images/secon-parall-min.jpg);
+    
+
+}
+/* -----------------------------Main----------------------- */
+
+main{
+    display: grid;
+    grid-template-rows: auto 100vh;
+    grid-template-columns: auto auto;
+    grid-template-areas: "sideA sideB"
+    "foot foot";  
+    overflow: hidden; 
+}
+.sidebar-a, .sidebar-b{
+    padding: 7em 3em;
+    background: #ffffff;
+}
+.sidebar-a{
+    grid-area:sideA; 
+    
+}
+.sidebar-a img{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    margin: 0 30px;
+}
+
+.sidebar-b{
+    grid-area:sideB; 
+}
+.sidebar-b h2{
+   
+    color: #2C2D32;
+    
+}
+
+.sidebar-a{
+    grid-area:sideA; 
+}
+.footer-grid{
+    grid-area: foot
+ 
+}
+
+.servicios{
+    background-color:#F0F0F0;
+    padding-top: 50px;
+}
+.footer-grid h2{
+    margin-left: 53px;
+    color: #2C2D32;
+    margin-top: 60px; 
+    margin-bottom: 60px;
+    display: inline-flex;
+    border-bottom: 2px #FF4E3D dotted;
+    padding-bottom: 7px;
+}
+.box{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 40px; 
+    flex-flow: wrap;
+    width: 80%;
+    height: 15vh;;
+    margin: 0 auto;
+   
+}
+.box h3{
+    color:#FF4E3D;
+   
+}
+.box div{
+    padding: 10px;
+    background-color: #2C2D32;
+    width: 20vw;
+    margin: 10px; 
+ 
+
+}
+.boxi {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 3px grey;
+}
+.boxi i{
+    color: rgba(255, 255, 255, 0.70);
+    
+    
+    border: 2px  rgba(255, 255, 255, 0.70)solid;
+    
+   
+}
+
+
+/* 
+--------------------------------------footer---------------------- */
+footer{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer p{
+    font-size: 30px;
+   
+
+}
+footer i{
+    color: rgba(255, 255, 255, 0.70);
+    
+    
+    border: 2px  rgba(255, 255, 255, 0.70)solid;
+    margin: 15px;
+}
+
+
+/*-----------------------------------------------media queryes-----------------*/
+
+
+
+@media only screen and (max-width:900px){
+    /*General*/
+    i{font-size: 15px;
+        width: 20px;
+        padding: 5px;
+    }   
+     .sidebar-right{
+        margin-left: 12%;
+        width: 88%;
+        }
+    /*header*/
+   
+   
+    menu{
+        width: 12%;
+    }
+    .menuprincipal h3{
+        display: none;
+    }
+    
+    /*INTRo*/
+    .intro{
+        min-height: 35vh;
+    }
+    h1 {
+       font-size: 1.5em;
+       margin: 30px;
+    }
+    /*Main*/
+    main{
+        display: flex;
+         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar-a{
+        
+        width: 100%;
+    }
+
+    .sidebar-a img{
+      
+        width: 80%;
+    }
+    .servicios{
+        padding-top: 0px;
+        height: 100vh;
+    }
+    .box h3{
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    /*Footer*/
+   footer p{
+        font-size: 14px;
+   }
+
+}
+@media only screen and (max-width:900px){
+    
+    .box h3{
+        font-size: 11px;
+    }
+    footer p{
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+
